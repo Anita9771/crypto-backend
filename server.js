@@ -8,6 +8,11 @@ const PORT = 5000;
 // Enable CORS for all routes
 app.use(cors());
 
+// Define a basic route
+app.get("/", (req, res) => {
+  res.send("Hello, Vercel!");
+});
+
 // Proxy endpoint
 app.get('/api/crypto', async (req, res) => {
   try {
