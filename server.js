@@ -16,9 +16,9 @@ app.get("/", (req, res) => {
 // Proxy endpoint
 app.get('/api/crypto', async (req, res) => {
   try {
-    const response = await axios.get('https://sandbox-api.coinmarketcap.com/v1/cryptocurrency/listings/latest', {
+    const response = await axios.get('https://pro-api.coinmarketcap.com/v1/cryptocurrency/listings/latest', {
       headers: {
-        'X-CMC_PRO_API_KEY': 'b54bcf4d-1bca-4e8e-9a24-22ff2c3d462c',
+        'X-CMC_PRO_API_KEY': 'a1cc23d5-55ac-42b0-85c5-1f4f45c73928',
       },
     });
     res.json(response.data);
